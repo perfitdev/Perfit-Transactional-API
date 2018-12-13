@@ -65,7 +65,31 @@ La cantidad máxima direcciones CC y BCC es de 10 para cada recipient.
 | `tags[]` | 100 chars | 10 |
 | `batch_code` | 30 chars | - |
 
-## Códigos de error
+## Errores
+
+| Status | error.type | Descripción |
+| :--- | :--- | :--- |
+| 400 | `bad_request` | El contenido del request tiene un formato inválido. |
+| 400 | `validation_error` | Algunos de los campos tienen contenido inválido. |
+| 401 | `unauthorized` | El API key utilizado es inválido o no se especificó. |
+| 403 | `forbidden` | El request fue bloqueado. La causa se especifica en message. |
+| 500 | `internal_server_error` | Ocurrió un error inesperado en el servidor. |
+| 503 | `service_unavailable` | El servicio no está disponible. Generalmente por límites temporales de envío. |
+
+#### Ejemplo
+
+```javascript
+{
+    "success": false,
+    "error": {
+        "status": 403,
+        "type": "forbidden",
+        "message": "Origin IP address not allowed: 190.19.245.237"
+    }
+}
+```
+
+### Errores de validación
 
 | Error | Descripción |
 | :--- | :--- |
@@ -74,6 +98,22 @@ La cantidad máxima direcciones CC y BCC es de 10 para cada recipient.
 | `max_length_exceeded` | Se excedió la longitud máximo en un campo de tipo string. |
 | `too_many_items` | Se excedió la cantidad permitida de elementos en un campo de tipo array. |
 | `invalid_value` | El valor indicado no es válido. |
+
+#### Ejemplo
+
+```javascript
+{
+    "success": false,
+    "error": {
+        "status": 400,
+        "type": "validation_error",
+        "message": "Some fields have invalid values"
+        "errors": {
+            "from.email": "required"
+        }
+    }
+}
+```
 
 
 
