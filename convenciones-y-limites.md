@@ -97,7 +97,7 @@ La cantidad máxima direcciones CC y BCC es de 10 para cada recipient.
 | `required_at_least_one` | Se debe incluir al menos un elemento en el campo de tipo array. |
 | `max_length_exceeded` | Se excedió la longitud máximo en un campo de tipo string. |
 | `too_many_items` | Se excedió la cantidad permitida de elementos en un campo de tipo array. |
-| `invalid_value` | El valor indicado no es válido. |
+| `invalid_value` | El valor indicado tiene un formato inválido. |
 
 #### Ejemplo
 

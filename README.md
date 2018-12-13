@@ -207,7 +207,7 @@ Los únicos parámetros requeridos del body son: **`from.email`**, **`subject`**
 
 ```bash
 curl -X POST \
-  https://transactional.staging.myperfit.com/v1/mail/send \
+  https://transactional.myperfit.com/v1/mail/send \
   -H 'Authorization: <<API_KEY>>' \
   -H 'Content-Type: application/json' \
   -d '{
