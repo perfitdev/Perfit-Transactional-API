@@ -1,10 +1,10 @@
 ---
 description: >-
-  Es posible configurar webhooks HTTP para recibir notificaciones ante ciertos
+  Puedes configurar webhooks HTTP para recibir notificaciones ante ciertos
   eventos, como las aperturas, clicks, desuscripciones y rebotes.
 ---
 
-# Eventos y notificaciones
+# Webhooks de eventos
 
 ## Configuración
 

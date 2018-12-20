@@ -1,8 +1,26 @@
 # Table of contents
 
-* [Envío mediante API HTTP](README.md)
-* [Autenticación, formatos y límites](convenciones-y-limites.md)
-* [Monitoreo y links especiales](monitoreo-y-links-especiales.md)
-* [Personalización de contenidos](untitled.md)
-* [Eventos y notificaciones](notificaciones.md)
+* [Introducción](README.md)
+
+## HTTP API
+
+* [Envío a través HTTP](http-api/envio-por-http.md)
+* [Autenticación y formatos](http-api/convenciones-y-limites.md)
+* [Límites y errores](http-api/limites-y-errores.md)
+* [Java SDK](http-api/java-sdk.md)
+
+## SMTP API
+
+* [Envío a través SMTP](smtp-api/envio-por-smtp.md)
+
+## Personalización
+
+* [Personalización de contenidos](personalizacion/untitled-1.md)
+* [Links especiales](personalizacion/links-especiales.md)
+* [Ejemplos](personalizacion/ejemplos-de-personalizacion.md)
+
+## Monitoreo
+
+* [Configuración](monitoreo/monitoreo-y-links-especiales.md)
+* [Webhooks de eventos](monitoreo/notificaciones.md)
 
