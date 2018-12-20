@@ -6,6 +6,8 @@ description: >-
 
 # Introducción
 
+## Activa tu cuenta
+
 {% hint style="success" %}
 Para empezar a utilizar el servicio de emails transaccionales, primero **escríbenos a** [**dev@myperfit.com** ](mailto:dev@myperfit.com)solicitando que demos de alta tu cuenta y generemos tu API key.
 {% endhint %}
@@ -48,7 +50,7 @@ Recibe todos los eventos de envíos, aperturas, clicks y desuscripciones para si
 
 
 {% hint style="warning" %}
-**Por el momento no soportamos la inclusión de archivos adjuntos**. Si esto es algo que te interesa ¡avísanos! Estamos trabajando para tenerlo pronto.
+**Por el momento no soportamos la inclusión de archivos adjuntos**. Si esto es algo que te interesa ¡avísanos! Estamos trabajando para tenerlo pronto =\)
 {% endhint %}
 
 
