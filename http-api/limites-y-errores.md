@@ -16,8 +16,8 @@
 | `headers[].value` | 50 chars | - |
 | `tags[]` | 100 chars | 10 |
 | `batch_code` | 30 chars | - |
-| html | 300KB |  |
-| text | 300KB |  |
+| `html` | 300KB |  |
+| `text` | 300KB |  |
 
 ### Tamaño total por request
 

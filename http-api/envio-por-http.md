@@ -97,6 +97,7 @@ Los únicos parámetros requeridos del body son: **`from.email`**, **`subject`**
   * `bcc`: Array de objects, opcional. Misma estructura que el cc. Listado de destinatarios en copia oculta.
   * `substitutions`: Object, opcional. Modelo de reemplazo asociado a este destinatario.
   * `custom_args`: Object, opcional. Mapa string-string con información de identificación y seguimiento. Se informarán junto con los eventos de monitoreo.
+  * `tags`: Array de strings, opcional. Etiquetas de identificación y seguimiento de este batch. Se informarán junto con los eventos de monitoreo.
 * `substitutions`: Object, opcional. Modelo de reemplazo asociado a todo el batch.
 * `tracking`: Object, opcional.
   * `open`: Object, opcional.
@@ -110,7 +111,7 @@ Los únicos parámetros requeridos del body son: **`from.email`**, **`subject`**
     * `utm_content`: String, opcional.
     * `utm_term`: String, opcional.
 * `batch_code`: String, opcional. Identificador alfanumérico \(se limpan todos los caracteres que no sean \[a-z0-9\]\). 
-* `tags`: Array de strings, opcional. Etiquetas de identificación y seguimiento de este batch. Se informarán junto con los eventos de monitoreo.
+* `tags`: Array de strings, opcional. Etiquetas de identificación y seguimiento de este batch. Se informarán junto con los eventos de monitoreo. 
 
 ### Ejemplo de body completo
 
@@ -172,7 +173,8 @@ Este objeto JSON incluye todas las opciones mencionadas.
 			"custom_args": {
 				"internal_id": "43231312",
 				"other_attr": "1234"
-			}
+			},
+			"tags": ["cliente frecuente"]
 		}
 	],
 	"substitutions": {
