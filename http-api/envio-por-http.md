@@ -1,6 +1,6 @@
 ---
 description: >-
-  La API HTTP permite enviar un contenido a uno o varios destintarios con un
+  La API HTTP permite enviar un contenido a uno o varios destinatarios con un
   sólo POST, utilizar variables de reemplazo para personalizarlos, e incluir
   etiquetas y atributos para su seguimiento.
 ---
