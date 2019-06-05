@@ -10,7 +10,7 @@ description: >-
 
 Una de las funciones más útiles es la posibilidad de indicar un valor por defecto para los casos en los que no exista o su valor sea vacío, por ejemplo:
 
-`Hola ${contact.name!"amigue"}`
+`Hola ${contact.name!"amigo"}`
 
 En cualquiera de los siguientes casos, se utilizaría el valor por defecto:
 
