@@ -30,7 +30,9 @@ Para cada webhook se debe indicar:
 ### **Eventos de actividad**
 
 * `track.mail.opened`: Se detectó una apertura.
+* `track.mail.first_opened`: Primera apertura sobre un envío \(evento único por cada `mail_id`\).
 * `track.mail.clicked`: Se detectó un click sobre un link monitoreado.
+* `track.mail.first_clicked`: Primer click sobre un envío \(evento único por cada `mail_id`\).
 * `track.mail.unsubscribed`: El contacto se desuscribió o marcó el correo como spam.
 * `track.mail.viewed_online`: Se producjo una visualización online.
 
