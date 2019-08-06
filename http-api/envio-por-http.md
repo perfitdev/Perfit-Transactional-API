@@ -85,7 +85,7 @@ Los únicos parámetros requeridos del body son: **`from.email`**, **`subject`**
 * **`subject`**: **String, requerido, max 200 chars. Asunto del correo.**
 * **`content`**: **Object, requerido**. **Se debe indicar al menos un tipo.**
   * `html`: String, opcional, max 300KB. Contenido de tipo `text/html`. 
-  * `text`: String, opcional, max 300KB. Contenido de tipo `text/plan`.
+  * `text`: String, opcional, max 300KB. Contenido de tipo `text/plain`.
 * `headers`: Object, opcional. Mapa string-string con headers adicionales a incluir.
 * **`recipients`: Array de objetos, requerido**. **Debe contener al menos un elemento.**
   * **`to`**: **Object, requerido. Email y nombre del destinatario.**

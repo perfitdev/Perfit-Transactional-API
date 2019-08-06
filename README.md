@@ -9,7 +9,9 @@ description: >-
 ## Activa tu cuenta
 
 {% hint style="success" %}
-Para empezar a utilizar el servicio de emails transaccionales, primero **escríbenos a** [**dev@myperfit.com** ](mailto:dev@myperfit.com)solicitando que demos de alta tu cuenta y generemos tu API key.
+Para empezar a utilizar el servicio de emails transaccionales, **primero debes generar tu API key**. Puedes hacerlo desde la sección **Integraciones** en tu cuenta de Perfit. 
+
+Si tienes dudas sobre cómo hacerlo contáctanos a [soporte@myperfit.com](mailto:soporte@myperfit.com).
 {% endhint %}
 
 ## Usos frecuentes

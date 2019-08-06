@@ -19,7 +19,7 @@ Authorization: Bearer aDsffD35eSdfsadsGFdFfssfsaADS
 {% endhint %}
 
 {% hint style="info" %}
-Por el momento sólo es posible generar los API keys enviando una solicitud a [dev@myperfit.com.](mailto:dev@myperfit.com)
+Puedes generar tu API keys desde la sección Integraciones de tu cuenta de Perfit. Si tienes dudas sobre cómo hacerlo contáctanos a [soporte@myperfit.com](mailto:soporte@myperfit.com).
 {% endhint %}
 
 ## Formatos
