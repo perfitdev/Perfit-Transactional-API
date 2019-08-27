@@ -48,8 +48,13 @@ También generamos una versión web del contenido. Así podrás incluir un link 
 
 ### Notificaciones por webhooks
 
-Recibe todos los eventos de envíos, aperturas, clicks y desuscripciones para sincronizar tus listas o actualizar el estado de tus contactos en la aplicación integrada.  
+Recibe todos los eventos de envíos, aperturas, clicks y desuscripciones para sincronizar tus listas o actualizar el estado de tus contactos en la aplicación integrada.
 
+### Envío programado
+
+Es posible posponer el envío de los emails indicando una fecha futura. 
+
+### Archivos adjuntos
 
 {% hint style="warning" %}
 **Por el momento no soportamos la inclusión de archivos adjuntos**. Si esto es algo que te interesa ¡avísanos! Estamos trabajando para tenerlo pronto =\)
