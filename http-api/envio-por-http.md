@@ -112,8 +112,7 @@ Los únicos parámetros requeridos del body son: **`from.email`**, **`subject`**
     * `utm_term`: String, opcional.
 * `batch_code`: String, opcional. Identificador alfanumérico \(se limpan todos los caracteres que no sean \[a-z0-9\]\). 
 * `tags`: Array de strings, opcional. Etiquetas de identificación y seguimiento de este batch. Se informarán junto con los eventos de monitoreo. 
-
-### Ejemplo de body completo
+* `launch_date`: Fecha. Posponer el envío de este batch hasta la fecha y hora indicadas. Si no se indica se envía en forma inmediata.
 
 Este objeto JSON incluye todas las opciones mencionadas.
 
@@ -197,7 +196,8 @@ Este objeto JSON incluye todas las opciones mencionadas.
 		}
 	},
 	"batch_code": "mycampaign1234",
-	"tags": ["electro"]
+	"tags": ["electro"],
+	"launch_date": "2019-08-20T13:30:00Z",
 }
 
 ```
