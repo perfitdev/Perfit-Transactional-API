@@ -8,6 +8,7 @@
 * [Autenticación y formatos](http-api/convenciones-y-limites.md)
 * [Límites y errores](http-api/limites-y-errores.md)
 * [Java SDK](http-api/java-sdk.md)
+* [Ejemplo en PHP](http-api/ejemplo-en-php.md)
 
 ## SMTP API
 
