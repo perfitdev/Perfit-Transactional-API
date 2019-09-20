@@ -35,6 +35,7 @@ Para cada webhook se debe indicar:
 * `track.mail.first_clicked`: Primer click sobre un envío \(evento único por cada `mail_id`\).
 * `track.mail.unsubscribed`: El contacto se desuscribió o marcó el correo como spam.
 * `track.mail.viewed_online`: Se producjo una visualización online.
+* `track.mail.shared`: Se compartió el contenido utilizando.
 
 ## Notificaciones <a id="notificacion"></a>
 
@@ -83,6 +84,7 @@ Todos los eventos incluyen cierta información básica. Además, dependiendo el 
 La información presente en todos los eventos es:
 
 * `timestamp`: Fecha y hora de generación del evento.
+* `sent_timestamp`: Fecha y hora de envío del email asociado al evento
 * `hour_of_day`: Hora del día del `timestamp` \(0-23\).
 * `day_of_week`: Día de la semana del `timestamp` \(1-7\).
 * `track_id`: Id único del evento.
@@ -97,7 +99,7 @@ La información presente en todos los eventos es:
 * `custom_args`: Objeto asociado al recipient, indicado en el request de envío.
 * `mta`: Host utilizado para el envío del email.
 
-### Evento opened <a id="evento-track-mail-opened"></a>
+### Eventos `track.mail.opened` y `track.mail.first_opened` <a id="evento-track-mail-opened"></a>
 
 Además de la información básica, se incluyen también: 
 
@@ -109,6 +111,8 @@ Además de la información básica, se incluyen también:
 * `agent_version`:Nombre y versión de cliente de correo.
 * `ip`: Dirección IP del cliente.
 * `country`: País detectado a partir de la IP.
+* `city`: Ciudad detectada a partir de la IP.
+* `seconds_from_sent`: segundos transcurridos desde el evento track.mail.sent asociado a este evento. Sólo disponible en `track.mail.first_opened`.
 
 Para los casos en que el pixel de trackeo de apertura se abra a través de un proxy \(por ejemplo Gmail y Yahoo\), no se incluye la información de geolocalización e identificación de dispositivo ya que no son confiables.
 
@@ -145,9 +149,9 @@ Para los casos en que el pixel de trackeo de apertura se abra a través de un pr
 }
 ```
 
-### Evento clicked <a id="evento-track-mail-clicked"></a>
+### Evento `track.mail.clicked` y `track.mail.first_clicked` <a id="evento-track-mail-clicked"></a>
 
-Además de toda la información disponible en track.mail.open, se incluye también:
+Además de toda la información disponible en `track.mail.opened`, se incluye también:
 
 * `url`: URL del link.
 * `link_id`: Id único asociado al link.
@@ -194,7 +198,7 @@ Además de toda la información disponible en track.mail.open, se incluye tambi�
 
 ​Para el caso de `track.mail.clicked`, siempre se tendrá disponible la información de geolocalización y dispositivo.
 
-### Evento unsubscribed
+### Evento `track.mail.unsubscribed`
 
 Además de la información general, se incluye también:
 
@@ -206,22 +210,30 @@ Además de la información general, se incluye también:
   * spam\_fbl
   * oneclick
 
-### Evento bounced
+### Evento `track.mail.bounced`
 
 Además de la información general, se incluye también:
 
 * `bounce_type`: Tipo de rebote, puede ser hard o soft.
 * `message`: Primeras líneas del mensaje de rebote recibido.
 
-### Evento sent
+### Evento `track.mail.sent`
 
 No se incluye ninguna información adicional además de la general.
 
-### Evento viewed\_online
+### Evento `track.mail.viewed_online`
 
 No se incluye ninguna información adicional además de la general.
 
-### Evento dropped
+### Evento `track.mail.dropped`
 
 No se incluye ninguna información adicional además de la general.
+
+### Evento `track.mail.shared`
+
+Además de toda la información disponible en `track.mail.opened`, se incluye también:
+
+* `shared_on`: red social en la que el contacto compartió el contenido
+
+
 
