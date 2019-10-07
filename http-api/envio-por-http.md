@@ -7,7 +7,7 @@ description: >-
 
 # Envío a través HTTP
 
-## Uso básico
+## Ejemplo básico
 
 Empecemos por el ejemplo más sencillo posible:
 
@@ -24,11 +24,20 @@ curl -X POST \
 }'
 ```
 
-{% hint style="success" %}
-Cuando es necesario hacer un gran número de requests, es altamente recomendable **mantener las conexiones HTTP abiertas usando keep-alive**. Esto evita todo el overhead que se introduce al establecer las conecciones TCP. En las pruebas realizadas se vieron incrementos de ~5x en los requests por segundo alcanzados.
-{% endhint %}
+## Ejemplo usando una plantilla
 
-## Uso avanzado
+Otra forma de indicar el contenido es utilizando una plantilla diseñada en la aplicación web, donde ya incluyen el remitente asunto y contenido.
+
+```bash
+curl -X POST \
+  https://transactional.myperfit.com/v1/mail/send \
+  -H 'Authorization: <<MI_API_KEY>>' \
+  -H 'Content-Type: application/json' \
+  -d '{
+    "template_id": "etpl_efd23wnfo23edsoirsnde",
+    "recipients": [{"to": {"email": "recipient@example.com"}}]
+}'
+```
 
 {% api-method method="post" host="https://transactional.myperfit.com/v1" path="/mail/send" %}
 {% api-method-summary %}
@@ -53,7 +62,7 @@ Bearer &lt;&lt;API-KEY&gt;&gt;
 
 {% api-method-body-parameters %}
 {% api-method-parameter name="Body" type="object" required=true %}
-
+Cuerpo del mensaje en formato JSON
 {% endapi-method-parameter %}
 {% endapi-method-body-parameters %}
 {% endapi-method-request %}
@@ -72,7 +81,7 @@ Bearer &lt;&lt;API-KEY&gt;&gt;
 {% endapi-method-spec %}
 {% endapi-method %}
 
-### Estructura del body
+### Estructura del mensaje
 
 Los únicos parámetros requeridos del body son: **`from.email`**, **`subject`**, **`content`** \(al menos uno: `html` o `text`\) y **`recipients`** \(al menos uno, incluyendo al menos **`to.email`**\).
 
@@ -86,6 +95,7 @@ Los únicos parámetros requeridos del body son: **`from.email`**, **`subject`**
 * **`content`**: **Object, requerido**. **Se debe indicar al menos un tipo.**
   * `html`: String, opcional, max 300KB. Contenido de tipo `text/html`. 
   * `text`: String, opcional, max 300KB. Contenido de tipo `text/plain`.
+* **`template_id`: String, opcional. El id de la plantilla a utilizar.** En caso de usar una plantilla, dejan de ser requeridos los campos from, reply\_to, subject y content, y sus valores serán ignorados en caso de estar presentes.
 * `headers`: Object, opcional. Mapa string-string con headers adicionales a incluir.
 * **`recipients`: Array de objetos, requerido**. **Debe contener al menos un elemento.**
   * **`to`**: **Object, requerido. Email y nombre del destinatario.**
@@ -201,6 +211,10 @@ Este objeto JSON incluye todas las opciones mencionadas.
 }
 
 ```
+
+{% hint style="success" %}
+Cuando es necesario hacer un gran número de requests, es altamente recomendable **mantener las conexiones HTTP abiertas usando keep-alive**. Esto evita todo el overhead que se introduce al establecer las conecciones TCP. En las pruebas realizadas se vieron incrementos de ~5x en los requests por segundo alcanzados.
+{% endhint %}
 
 
 
