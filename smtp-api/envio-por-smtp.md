@@ -12,7 +12,15 @@ description: >-
 La conexión debe hacerse a **`smtp.myperfit.com`**, a alguno de estos puertos: `25`, `587`, `2525`.
 
 {% hint style="warning" %}
-Algunos ISPs bloquean o limitan el tráfico del puerto 25, por lo que recomendamos utilizar el puerto 586.
+Algunos ISPs bloquean o limitan el tráfico del puerto 25, por lo que recomendamos utilizar el puerto 587.
+{% endhint %}
+
+## Cifrado
+
+En esta opción selecciona la opción **Ninguno** o **Sin cifrado**.
+
+{% hint style="info" %}
+Por el momento no soportamos opciones de cifrado como SSL o TLS.
 {% endhint %}
 
 ## Autenticación
@@ -22,8 +30,10 @@ Debe utilizarse el método **`AUTH LOGIN`** para autenticarse con estas credenci
 * username: **apikey**
 * password: **&lt;&lt;MI\_API\_KEY&gt;&gt;**
 
-{% hint style="info" %}
-Por el momento sólo es posible generar los API keys enviando una solicitud a [dev@myperfit.com.](mailto:dev@myperfit.com)
+{% hint style="success" %}
+Puedes **generar tu API key** desde la sección **Integraciones** en tu cuenta de Perfit. 
+
+Si tienes dudas sobre cómo hacerlo contáctanos a [soporte@myperfit.com](mailto:soporte@myperfit.com).
 {% endhint %}
 
 ## Limitaciones
@@ -32,7 +42,7 @@ La API SMTP por el momento cuenta con estas limitaciones:
 
 * No es posible modificar las opciones de monitoreo. Por defecto está activado el monitoreo de aperturas y clicks.
 * No es posible indicar modelos para utilizar en el motor de reemplazo \(`substitutions`\)
-* No es posible indicar `tags`, `custom_args`, `batch_code`.
+* No es posible indicar `tags`, `custom_args`, `batch_code` para identificar eventos o agrupar envíos.
 * Por el momento no es posible enviar archivos adjuntos \(la API HTTP tampoco lo permite\).
 
 Si necesitas utilizar algunas de estas características utiliza la API HTTP.
