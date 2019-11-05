@@ -24,4 +24,5 @@
 
 * [Configuración](monitoreo/monitoreo-y-links-especiales.md)
 * [Webhooks de eventos](monitoreo/notificaciones.md)
+* [Listado de actividad](monitoreo/listado-de-actividad.md)
 
