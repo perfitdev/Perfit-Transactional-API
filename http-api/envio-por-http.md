@@ -14,7 +14,7 @@ Empecemos por el ejemplo más sencillo posible:
 ```bash
 curl -X POST \
   https://transactional.myperfit.com/v1/mail/send \
-  -H 'Authorization: <<MI_API_KEY>>' \
+  -H 'Authorization: MI_API_KEY' \
   -H 'Content-Type: application/json' \
   -d '{
     "from": { "email": "remitente@example.com" },
@@ -31,7 +31,7 @@ Otra forma de indicar el contenido es utilizando una plantilla diseñada en la a
 ```bash
 curl -X POST \
   https://transactional.myperfit.com/v1/mail/send \
-  -H 'Authorization: <<MI_API_KEY>>' \
+  -H 'Authorization: MI_API_KEY' \
   -H 'Content-Type: application/json' \
   -d '{
     "template_id": "etpl_efd23wnfo23edsoirsnde",
@@ -56,7 +56,7 @@ El `content`,  `subject` y `headers` pueden ser personalizados utilizando etique
 {% api-method-request %}
 {% api-method-headers %}
 {% api-method-parameter name="Authorization" type="string" required=true %}
-Bearer &lt;&lt;API-KEY&gt;&gt;
+Bearer API\_KEY
 {% endapi-method-parameter %}
 {% endapi-method-headers %}
 

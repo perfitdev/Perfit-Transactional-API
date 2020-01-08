@@ -21,7 +21,7 @@ curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");
 curl_setopt($ch, CURLOPT_POSTFIELDS, $data);
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 curl_setopt($ch, CURLOPT_HTTPHEADER, array(
-    "Authorization: Bearer <<API_KEY>>",
+    "Authorization: Bearer API_KEY",
     "Content-Type: application/json"
 ));
 

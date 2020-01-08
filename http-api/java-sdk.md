@@ -28,7 +28,7 @@ compile group: 'com.myperfit.sdk.transactional', name: 'transactionalsdk', versi
 
 ```java
 PerfitTransactional perfit = PerfitTransactional.builder()
-        .apiKey("<<API_KEY>>")
+        .apiKey("API_KEY")
         .build();
 
 // Remitente

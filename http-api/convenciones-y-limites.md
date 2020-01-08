@@ -5,7 +5,7 @@
 La autenticación se realiza agregando el header `Authorization` a cada request: 
 
 ```text
-Authorization: Bearer <<MI_API_KEY>>
+Authorization: Bearer MI_API_KEY
 ```
 
 #### Por ejemplo:
