@@ -35,7 +35,7 @@ Para cada webhook se debe indicar:
 * `track.mail.first_clicked`: Primer click sobre un envío \(evento único por cada `mail_id`\).
 * `track.mail.unsubscribed`: El contacto se desuscribió o marcó el correo como spam.
 * `track.mail.viewed_online`: Se producjo una visualización online.
-* `track.mail.shared`: Se compartió el contenido utilizando.
+* `track.mail.shared`: Se compartió el contenido utilizando el link de compartir en redes sociales.
 
 ## Notificaciones <a id="notificacion"></a>
 
@@ -68,7 +68,7 @@ Por ejemplo:
 Si el POST realizado recibe un código de respuesta distinto a 2xx, los eventos serás reencolados para su reintento. Se reintentará una vez más después de 1 minuto, luego los eventos serás descartados.
 
 {% hint style="warning" %}
-Si el volúmen de emails enviados genera muchos eventos, los webhooks pueden rápidamente sobrecargar al sevidor destino si no está configurado correctemente. Recomendamos utilizar loarder.io para realizar pruebas de carga.
+Si el volúmen de emails enviados genera muchos eventos, los webhooks pueden rápidamente sobrecargar al sevidor destino si no está configurado correctemente. Recomendamos utilizar loader.io para realizar pruebas de carga.
 {% endhint %}
 
 ### Throttling
