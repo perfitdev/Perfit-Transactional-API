@@ -27,8 +27,13 @@ Por el momento no soportamos opciones de cifrado como SSL o TLS.
 
 Debe utilizarse el método **`AUTH LOGIN`** para autenticarse con estas credenciales:
 
+* username: "**apikey"**
+* password: **MI\_API\_KEY**
+
+**Por ejemplo:**
+
 * username: **apikey**
-* password: **&lt;&lt;MI\_API\_KEY&gt;&gt;**
+* password: **micuenta-tr-lf223iewndfc09wopijqesdqws**
 
 {% hint style="success" %}
 Puedes **generar tu API key** desde la sección **Integraciones** en tu cuenta de Perfit. 
