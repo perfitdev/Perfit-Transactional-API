@@ -16,12 +16,16 @@
 | `headers[].value` | 50 chars | - |
 | `tags[]` | 100 chars | 10 |
 | `batch_code` | 30 chars | - |
-| `html` | 300KB |  |
-| `text` | 300KB |  |
+| `content.html` | 300KB |  |
+| `content.text` | 300KB |  |
 
 ### Tamaño total por request
 
 El tamaño total de cada request no puede superar los 10MB.
+
+### Tamaño de archivos adjuntos
+
+Los archivos adjuntos se consideran como parte del mensaje, por lo que suman para el límite total de 10MB.
 
 ## Errores
 

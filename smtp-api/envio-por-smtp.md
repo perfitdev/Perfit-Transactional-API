@@ -48,9 +48,8 @@ La API SMTP por el momento cuenta con estas limitaciones:
 * No es posible modificar las opciones de monitoreo. Por defecto está activado el monitoreo de aperturas y clicks.
 * No es posible indicar modelos para utilizar en el motor de reemplazo \(`substitutions`\)
 * No es posible indicar `tags`, `custom_args`, `batch_code` para identificar eventos o agrupar envíos.
-* Por el momento no es posible enviar archivos adjuntos \(la API HTTP tampoco lo permite\).
 
-Si necesitas utilizar algunas de estas características utiliza la API HTTP.
+Si necesitas utilizar algunas de estas características por favor utiliza la API HTTP.
 
 ## Ejemplo utilizando telnet
 

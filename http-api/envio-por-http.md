@@ -96,6 +96,10 @@ Los únicos parámetros requeridos del body son: **`from.email`**, **`subject`**
   * `html`: String, opcional, max 300KB. Contenido de tipo `text/html`. 
   * `text`: String, opcional, max 300KB. Contenido de tipo `text/plain`.
 * **`template_id`: String, opcional. El id de la plantilla a utilizar.** En caso de usar una plantilla, dejan de ser requeridos los campos from, reply\_to, subject y content, y sus valores serán ignorados en caso de estar presentes.
+* `attachments`: Array de objects, opcional. 
+  * `file_name`: String, requerido. Nombre del archivo adjunto.
+  * `mime_type`: String, requerido. Tipo mime del archivo adjunto.
+  * `data`: String, requerido. Contenido del archivo adjunto en base64.
 * `headers`: Object, opcional. Mapa string-string con headers adicionales a incluir.
 * **`recipients`: Array de objetos, requerido**. **Debe contener al menos un elemento.**
   * **`to`**: **Object, requerido. Email y nombre del destinatario.**
@@ -192,6 +196,13 @@ Este objeto JSON incluye todas las opciones mencionadas.
 			"address": "San Nicolas 3940, CABA, Argentina",
 		}
 	},
+	"attachments": [
+  	{
+  		"file_name": "file.png",
+	    "mime_type": "image/png",
+    	"data": "base64data"
+    }
+  ],     
 	"tracking": { 
 		"open": { 
 			"enable": true 

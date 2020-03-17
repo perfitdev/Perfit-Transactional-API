@@ -38,7 +38,7 @@ Utiliza variables de reemplazo para enviar contenidos personalizados a cada dest
 
 Registramos en forma predeterminada las aperturas y clicks en todos los links del contenido.
 
-### Gestion de desuscripciones
+### Gestión de desuscripciones
 
 Opcionalmente puedes incluir un link en el contenido para que tus contactos se desuscriban.
 
@@ -56,9 +56,9 @@ Es posible posponer el envío de los emails indicando una fecha futura.
 
 ### Archivos adjuntos
 
-{% hint style="warning" %}
-**Por el momento no soportamos la inclusión de archivos adjuntos**. Si esto es algo que te interesa ¡avísanos! Estamos trabajando para tenerlo pronto =\)
+Puedes incluir archivos adjuntos en tus envíos. Soportamos los formatos pdf, png, jpg, gif, txt, csv, xls, xlsx, doc, docx.
+
+{% hint style="info" %}
+Para habilitar el envío de archivos adjuntos, ponte en contacto con nosotros. Puedes solicitarlo a dev@myperfit.com.
 {% endhint %}
-
-
 
