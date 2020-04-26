@@ -95,7 +95,7 @@ Los únicos parámetros requeridos del body son: **`from.email`**, **`subject`**
 * **`content`**: **Object, requerido**. **Se debe indicar al menos un tipo.**
   * `html`: String, opcional, max 300KB. Contenido de tipo `text/html`. 
   * `text`: String, opcional, max 300KB. Contenido de tipo `text/plain`.
-* **`template_id`: String, opcional. El id de la plantilla a utilizar.** En caso de usar una plantilla, dejan de ser requeridos los campos from, reply\_to, subject y content, y sus valores serán ignorados en caso de estar presentes.
+* `template_id`**: String, opcional. El id de la plantilla a utilizar, en lugar de indicar el `content.`** En caso de usar una plantilla, dejan de ser requeridos los campos from, reply\_to, subject y content. En caso de indicar alguno de ellos, sus valores reemplazarán a los definidos en la plantilla.
 * `attachments`: Array de objects, opcional. 
   * `file_name`: String, requerido. Nombre del archivo adjunto.
   * `mime_type`: String, requerido. Tipo mime del archivo adjunto.
