@@ -6,18 +6,13 @@ description: >-
 
 # Webhooks de eventos
 
-## Configuración
+## Activación
 
-Por el momento no está disponible la API de administración de webhooks. Sólo es posible configurarlos  a pedido. 
+Para activar el envío de webhooks, dentro de la aplicación de Perfit dirígite a la sección **Integraciones &gt; Webhooks.** Haz click en **ACTIVAR** e ingresa la URL dónde se deben enviar los eventos.
 
 {% hint style="info" %}
-Puedes solicitar la configuración de un webhook enviando un email a [dev@myperfit.com](mailto:dev@myperfit.com).
+Por defecto se envían todos los tipos de eventos. En caso de necesitar recibir sólo algunos tipos de eventos en particular, puedes solicitarlo enviando un email a [dev@myperfit.com](mailto:dev@myperfit.com).
 {% endhint %}
-
-Para cada webhook se debe indicar:
-
-* URL de notificacion
-* Eventos a notificar
 
 ## Tipos de eventos
 
