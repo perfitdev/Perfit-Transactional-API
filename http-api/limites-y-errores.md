@@ -55,6 +55,21 @@ El `type` puede ser alguno de estos:
 | 500 | `internal_server_error` | Ocurrió un error inesperado en el servidor. |
 | 503 | `service_unavailable` | El servicio no está disponible. Generalmente por límites temporales de envío. |
 
+### Límite alcanzado
+
+En caso de alcanzar el límite mensual o por hora, se indica un error de tipo `503 service_unavailable` con este formato:
+
+```javascript
+{
+    "success": false,
+    "error": {
+        "status": 503,
+        "type": "service_unavailable",
+        "message": "Sending limit reached: HOURLY"
+    }
+}
+```
+
 ### Errores de validación
 
 Cuando `type` es `validation_error`, se incluye un objeto `errors` con todos los errores de validación encontrados:
