@@ -68,13 +68,16 @@ Cuerpo del mensaje en formato JSON
 {% endapi-method-request %}
 
 {% api-method-response %}
-{% api-method-response-example httpCode=200 %}
+{% api-method-response-example httpCode=202 %}
 {% api-method-response-example-description %}
-
+En caso de aceptar el pedido de envío.
 {% endapi-method-response-example-description %}
 
-```
-
+```javascript
+{
+    "success": true,
+    "data": ""
+}
 ```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
