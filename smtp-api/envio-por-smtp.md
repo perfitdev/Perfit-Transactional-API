@@ -9,11 +9,7 @@ description: >-
 
 ## Host y puertos
 
-La conexión debe hacerse a **`smtp.myperfit.com`**, a alguno de estos puertos: `587`, `2525`.
-
-{% hint style="warning" %}
-Algunos ISPs bloquean o limitan el tráfico del puerto 25, por lo que recomendamos utilizar el puerto 587.
-{% endhint %}
+La conexión debe hacerse a **`smtp.myperfit.com`** utilizando el puerto: **`2525`**.
 
 ## Cifrado
 
