@@ -39,7 +39,8 @@ MailAddressRequest fromAddress = MailAddressRequest.builder()
 
 // Contenidos
 MailContentRequest content = MailContentRequest.builder()
-        .html("contenido html")
+        .html("<h1>contenido html</h1>")
+        .text("contenido texto plan")
         .build();
 
 // Listado de destinatarios
@@ -52,7 +53,8 @@ MailAddressRequest toAddress1 = MailAddressRequest.builder()
         
 MailRecipientRequest recipient1 = MailRecipientRequest.builder()
         .to(toAddress1)
-        .customArgs(Map.of("key1","value1", "key2", "value2"))
+        .substitutions(Map.of("first_name","Nombre", "last_name", "Apellido"))
+        .customArgs(Map.of("my_tracking_id","value1", "other_id", "value2"))
         .build();
         
 recipients.add(recipient1);
