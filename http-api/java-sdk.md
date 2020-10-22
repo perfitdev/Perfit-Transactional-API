@@ -33,19 +33,27 @@ PerfitTransactional perfit = PerfitTransactional.builder()
 
 // Remitente
 MailAddressRequest fromAddress = MailAddressRequest.builder()
-        .email("from@midominio.com").build();
+        .email("from@midominio.com")
+        .name("Nombre Remitente")
+        .build();
 
 // Contenidos
 MailContentRequest content = MailContentRequest.builder()
-        .html("contenido html").build();
+        .html("contenido html")
+        .build();
 
 // Listado de destinatarios
 List<MailRecipientRequest> recipients = new ArrayList<>();
 
 MailAddressRequest toAddress1 = MailAddressRequest.builder()
-        .email("to@midominio.com").build();
+        .email("to@midominio.com")
+        .name("Nombre Destinatario") 
+        .build();
+        
 MailRecipientRequest recipient1 = MailRecipientRequest.builder()
-        .to(toAddress1).build();
+        .to(toAddress1)
+        .customArgs(Map.of("key1","value1", "key2", "value2"))
+        .build();
         
 recipients.add(recipient1);
 
@@ -55,6 +63,7 @@ SendMailRequest request = SendMailRequest.builder()
         .subject("Test Subject")
         .content(content)
         .recipients(recipients)
+        .tags(List.of("tag1", "tag2"))
         .build();
 
 try {
