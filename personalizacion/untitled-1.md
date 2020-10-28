@@ -5,7 +5,7 @@ description: >-
   valores por defecto y bloques condicionales.
 ---
 
-# Personalización de contenidos
+# Contenidos dinámicos
 
 {% hint style="success" %}
 Cuando se desea enviar una gran número de emails con un contenido similar, siempre que sea posible, es conveniente agrupar muchos `recipients` en un mismo POST y utilizar la personalización del contenido,  en vez de enviar un mensaje individial para cada uno.  **Esto mejor notablemente la performance y velocidad de entrega.**

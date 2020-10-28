@@ -1,64 +1,37 @@
 ---
 description: >-
-  La API de envíos transaccionales de Perfit te permite enviar los emails de tu
-  aplicación a través de Perfit.
+  Te damos la bienvenida al sitio de desarrolladores de Perfit! En este sitio
+  encontrarás todo lo necesario para utilizar nuestras APIs y conectar tu
+  aplicación con Perfit.
 ---
 
-# Introducción
+# Inicio
 
-## Activa tu cuenta
+## Crea tu cuenta
 
-{% hint style="success" %}
-Para empezar a utilizar el servicio de emails transaccionales, **primero debes generar tu API key**. Puedes hacerlo desde la sección **Integraciones** en tu cuenta de Perfit. 
-
-Si tienes dudas sobre cómo hacerlo contáctanos a [soporte@myperfit.com](mailto:soporte@myperfit.com).
-{% endhint %}
-
-## Usos frecuentes
-
-Algunos de los usos más frecuentes son:
-
-* Emails de registración, bienvenida, …
-* Emails de compra finalizada, carrito abandonado, …
-* Notificaciones de cambio de plan, factura pendientes, pago realizado…
-* Envío de notificaciones en general.
-
-## Características principales
-
-### Potente motor de reemplazo de contenido
-
-Utiliza variables de reemplazo para enviar contenidos personalizados a cada destinatario. Contamos con uno de los motores más completos, que te permitirá entre otra cosas:
-
-* **Bloques condicionales**. Por ejemplo, para mostrar ciertas partes del contenido dependiendo del perfil de cada destinatario.
-* **Iteradores**. Muy útil para mostrar listados variables de productos.
-* **Reemplazo de variables con valores por defecto.** Para dirigirte a cada destinatario en forma personal
-* **Aplicar formatos a fechas, números, etc.** 
-
-### Monitoreo de aperturas y clicks
-
-Registramos en forma predeterminada las aperturas y clicks en todos los links del contenido.
-
-### Gestión de desuscripciones
-
-Opcionalmente puedes incluir un link en el contenido para que tus contactos se desuscriban.
-
-### Versión online del contenido
-
-También generamos una versión web del contenido. Así podrás incluir un link para ver el mensaje en el navegador.
-
-### Notificaciones por webhooks
-
-Recibe todos los eventos de envíos, aperturas, clicks y desuscripciones para sincronizar tus listas o actualizar el estado de tus contactos en la aplicación integrada.
-
-### Envío programado
-
-Es posible posponer el envío de los emails indicando una fecha futura. 
-
-### Archivos adjuntos
-
-Puedes incluir archivos adjuntos en tus envíos. Soportamos los formatos pdf, png, jpg, gif, txt, csv, xls, xlsx, doc, docx.
+Antes que nada, para poder usar estas APIs, debes contar con una cuenta activa en Perfit.
 
 {% hint style="info" %}
-Para habilitar el envío de archivos adjuntos, ponte en contacto con nosotros. Puedes solicitarlo a dev@myperfit.com.
+Si todavía no tienes una cuenta en Perfit puedes [crearla aquí](https://app.myperfit.com/#signup).
 {% endhint %}
+
+## APIs disponibles
+
+Existen 2 APIs principales, que funcionan en forma independiente y cada una de ellas tiene sus particularidades, como por ejemplo la forma de autenticarse.
+
+### Contacts API
+
+Este API te permite gestionar los contactos, listas, intereses, campos personalizados o cualquier otra acción que puedas realizar en forma manual desde la interfaz de Perfit.
+
+Los usos más frecuentes son crear nuevos contactos o actualizar contactos existentes para mantenerlos sincronizados con otros sistemas.
+
+### Transactional API
+
+El API de envíos transaccionales te permite enviar emails desde tus sistemas, de a uno o varios, reemplazando contenido dinámico y muchas más opciones de personalización. 
+
+Contamos un una API HTTP que cuenta con todas las funcionalidades y  es la forma recomendada de usarla. También contamos con una conexión SMTP para conectar sistemas existentes, pero sus funciones son más reducidas.
+
+## Soporte a desarrolladores
+
+En caso que tengas dudas, puedes contactarnos a [dev@myperfit.com](mailto:dev@myperfit.com)
 
