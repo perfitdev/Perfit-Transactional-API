@@ -8,6 +8,7 @@
 * [Autenticación](contacts-api/autenticacion.md)
 * [Manejo de errores](contacts-api/manejo-de-errores.md)
 * [Usos más frecuentes](contacts-api/usos-mas-frecuentes.md)
+* [Referencia completa](https://perfitapiv2.docs.apiary.io/)
 
 ## Transactional API
 
