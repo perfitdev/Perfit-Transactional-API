@@ -33,5 +33,5 @@ Contamos un una API HTTP que cuenta con todas las funcionalidades y  es la forma
 
 ## Soporte a desarrolladores
 
-En caso que tengas dudas, puedes contactarnos a [dev@myperfit.com](mailto:dev@myperfit.com)
+En caso que tengas dudas, puedes contactarnos a [dev@myperfit.com](mailto:dev@myperfit.com).
 
