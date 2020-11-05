@@ -7,7 +7,11 @@
 * [Introducción](contacts-api/introduccion.md)
 * [Autenticación](contacts-api/autenticacion.md)
 * [Manejo de errores](contacts-api/manejo-de-errores.md)
-* [Usos más frecuentes](contacts-api/usos-mas-frecuentes.md)
+* [Usos más frecuentes](contacts-api/usos-mas-frecuentes/README.md)
+  * [Crear o actualizar un contacto en una lista](contacts-api/usos-mas-frecuentes/crear-o-actualizar-un-contacto-en-una-lista.md)
+  * [Modificar un contacto existente](contacts-api/usos-mas-frecuentes/modificar-un-contacto-existente.md)
+  * [Agregar un interés a un contacto](contacts-api/usos-mas-frecuentes/agregar-un-interes-a-un-contacto.md)
+  * [Desuscribir a un contacto](contacts-api/usos-mas-frecuentes/desuscribir-a-un-contacto.md)
 * [Referencia completa](https://perfitapiv2.docs.apiary.io/)
 
 ## Transactional API
