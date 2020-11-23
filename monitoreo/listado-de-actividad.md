@@ -7,6 +7,10 @@ description: >-
 
 # Listado de actividad
 
+{% hint style="info" %}
+La autenticación a utilizar en este recurso es la misma que se utiliza en [Contacts API](../contacts-api/autenticacion.md). Para obtener el API key de un usuario puedes revisar este artículo.
+{% endhint %}
+
 {% api-method method="get" host="https://api.myperfit.com/v2" path="/:account/activity" %}
 {% api-method-summary %}
 /activity
