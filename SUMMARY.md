@@ -27,7 +27,7 @@
 
 ## Personalización
 
-* [Contenidos dinámicos](personalizacion/untitled-1.md)
+* [Contenidos dinámicos](personalizacion/contenidos-dinamicos.md)
 * [Links especiales](personalizacion/links-especiales.md)
 * [Ejemplos](personalizacion/ejemplos-de-personalizacion.md)
 
