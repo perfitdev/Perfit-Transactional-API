@@ -57,7 +57,7 @@ El `type` puede ser alguno de estos:
 
 ### Límite alcanzado
 
-En caso de alcanzar el límite mensual o por hora, se indica un error de tipo `503 service_unavailable` con este formato:
+En caso de alcanzar el límite mensual, el pedido será rechazadao, indicando un error de tipo `503 service_unavailable` como este:
 
 ```javascript
 {
@@ -65,7 +65,7 @@ En caso de alcanzar el límite mensual o por hora, se indica un error de tipo `5
     "error": {
         "status": 503,
         "type": "service_unavailable",
-        "message": "Sending limit reached: HOURLY"
+        "message": "Sending limit reached: MONTHLY"
     }
 }
 ```
